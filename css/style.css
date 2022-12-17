@@ -21,7 +21,7 @@ min-height: 100vh;
 }
 header {
     grid-area: header;
-background-color: aquamarine;
+background-color: rgb(192, 245, 238);
 grid-template-rows: 100% 100% 100%;
 
 }
@@ -51,34 +51,31 @@ padding: 15px 20px;
 
 main {
     grid-area: main;
-    background-color: cadetblue;
 }
 
 #jumbotron{
-background-image: url(../img/jumbotron.jpg);
+background: linear-gradient(90deg,rgba(161, 253, 253, 0.575) 10%,
+    rgba(249, 252, 252, 0.911)), url(../img/jumbotron.jpg);
 background-size: cover;
 background-repeat: no-repeat;
+background-position: center 70%;
 display:flex;
-justify-content: space-around;
-padding: 15px 20px;
+justify-content: end;
+padding: 15px 100px;
 }
 .jumbotron-description{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 100px;
+    justify-content:end;
     max-width: 400px;
 }
 
 #blog{
-    background-color: rgb(180, 180, 69);
+    background-color: whitesmoke;
 }
-.inline {
-    display:inline; padding:2px;
-}
+
 #adicionales{
-    background-color: rgb(149, 227, 233);
+    background-color: #fdf1f1;
     padding: 15px 20px;
 }
 .adicional-description{
@@ -86,7 +83,7 @@ padding: 15px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 .adicional-img{
     max-width: 400px;
@@ -105,7 +102,8 @@ padding: 15px 20px;
     display:inline; padding:30px;
 }
 footer {grid-area: footer;
-    background-color: aqua;
+    background-color:#cd965c;
     padding: 2rem 2rem;
     text-align: center;
+
 }
