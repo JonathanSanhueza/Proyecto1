@@ -25,6 +25,30 @@ background-color: aquamarine;
 grid-template-rows: 100% 100% 100%;
 
 }
+
+#Blog{
+padding: 15px 20px;
+}
+.blog-title-conteiner{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.blog{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cake-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cake-image{
+    max-width: 300px;
+}
+
 main {
     grid-area: main;
     background-color: cadetblue;
@@ -47,6 +71,12 @@ padding: 15px 20px;
     max-width: 400px;
 }
 
+#blog{
+    background-color: rgb(180, 180, 69);
+}
+.inline {
+    display:inline; padding:2px;
+}
 
 .inline {
     display:inline; padding:30px;
