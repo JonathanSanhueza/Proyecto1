@@ -38,6 +38,12 @@ padding: 15px 20px;
 .blog{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+}
+@media(min-width: 768px){
+    .blog {
+flex-direction: row;
+    }
 }
 
 .cake-card{
@@ -60,14 +66,25 @@ background-size: cover;
 background-repeat: no-repeat;
 background-position: center 70%;
 display:flex;
-justify-content: end;
-padding: 15px 100px;
+justify-content: start;
+padding: 15px 20px;
+}
+@media(min-width: 768px){
+    #jumbotron {
+        justify-content: end;
+        padding: 15px 100px;
+    }
 }
 .jumbotron-description{
     display: flex;
     flex-direction: column;
     justify-content:end;
-    max-width: 400px;
+    max-width: 240px;
+}
+@media(min-width: 768px){
+    .jumbotron-description {
+        max-width: 400px;
+    }
 }
 
 #blog{
