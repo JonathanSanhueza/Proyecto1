@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+body{
+    display:grid;
+    grid-template-areas: "header header header"
+                          "main main main"
+                          "main main main"
+                          "main main main"
+                          "main main main"
+                          "main main main"
+                          "footer footer footer";
+min-height: 100vh;
+}
+.main-title-conteiner {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    grid-area: header;
+background-color: aquamarine;
+grid-template-rows: 100% 100% 100%;
+
+}
+main {
+    grid-area: main;
+    background-color: cadetblue;
+}
+
+#jumbotron{
+background-image: url(../img/jumbotron.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+display:flex;
+justify-content: space-around;
+padding: 15px 20px;
+}
+.jumbotron-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+    max-width: 400px;
+}
+
+
+.inline {
+    display:inline; padding:30px;
+}
+footer {grid-area: footer;
+    background-color: aqua;
+    padding: 2rem 2rem;
+    text-align: center;
+}
